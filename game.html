@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+ <body>
+ <script>
+ var rand = Math.random()
+var min = 1
+var max = 100
+var q = (max - min) * rand + min
+q = Math.round(q)
+do {
+var number = prompt('Try to guess number', '');
+
+if (number == q) {
+  alert( 'You win!' );
+} else {
+	if (q > number) {
+  	alert( 'Higher' );
+  }
+  else {
+  	alert( 'Lower' ); 
+  }
+  }
+}while(number != q)
+
+</script>
+ </body>
+</html>
